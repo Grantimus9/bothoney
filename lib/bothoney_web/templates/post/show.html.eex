@@ -1,0 +1,9 @@
+
+<span><%= link "Edit", to: post_path(@conn, :edit, @post) %></span>
+<span><%= link "Back", to: post_path(@conn, :index) %></span>
+
+<h2><%= @post.title %></h2>
+
+<div class="row">
+  <%= @post.body %>
+</div>
